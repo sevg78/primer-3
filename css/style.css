@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
 }
-.body {
-
+body {
+  font-family: 'Muli', sans-serif;
 }
 .header {
   height: 60px;
@@ -11,6 +11,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  font-size: 1.5em;
 }
 .header a {
   text-decoration: none;
@@ -47,7 +48,7 @@
   font-size: 0.8em;
 }
 .header .user-nav:hover, .header .user-nav-ava:hover {
-  color: #000aff;
+  color: #bf9bf9;
 }
 .nav {
   position: relative;
@@ -63,7 +64,7 @@
   transition-duration: 0.5s;
 }
 nav a:hover {
-  color: #545afa;
+  color: #bf9bf9;
 }
 .burger {
   height: 30px;
