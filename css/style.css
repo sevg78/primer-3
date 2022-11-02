@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+
+}
+.header {
+  height: 60px;
+  background: #222;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header a {
+  text-decoration: none;
+  color: #ecf8fc;
+  display: block;
+  float: left;
+}
+.header .logo {
+  font-size: 2em;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 100px;
+  margin-right: 200px;
+}
+.header .user-ava {
+  float: right;
+  height: 30px;
+  width: 30px;
+  padding: 15px;
+}
+.header .user-ava img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.header .user-nav, .header .user-nav-ava {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  float: right;
+  margin-right: 10px;
+  transition-duration: 0.5s;
+  font-size: 0.8em;
+}
+.header .user-nav:hover, .header .user-nav-ava:hover {
+  color: #000aff;
+}
+.nav {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  background: #565656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav a {
+  margin-right: 60px;
+  transition-duration: 0.5s;
+}
+nav a:hover {
+  color: #545afa;
+}
+.burger {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.burger .line {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 100%;
+}
+.header input {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  opacity: 0;
+  z-index: 5;
+}
+.header input:checked ~ .burger .line1 {
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  width: 40px;
+}
+.header input:checked ~ .burger .line3 {
+  transform: rotate(-45deg);
+  transform-origin: 0% 100%;
+  width: 40px;
+}
+.header input:checked ~ .burger .line2 {
+  opacity: 0;
+}
+.burger {
+  display: none;
+}

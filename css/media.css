@@ -1,0 +1,29 @@
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 650px) {
+  .header .user-nav {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .header .logo {
+    margin-left: 60px;
+    margin-right: 20px;
+  }
+  .header .user-ava:active ~ .nav{
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  header input:checked ~ .nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .nav a {
+    flex-basis: 30px;
+  }
+}
