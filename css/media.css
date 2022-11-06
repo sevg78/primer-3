@@ -24,4 +24,10 @@
   .nav a {
     flex-basis: 50px;
   }
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin: 10px 5px 20px 5px;
+  }
 }
