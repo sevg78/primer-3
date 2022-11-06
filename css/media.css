@@ -12,18 +12,16 @@
     margin-left: 60px;
     margin-right: 20px;
   }
-  .header .user-ava:active ~ .nav{
-    display: none;
-  }
+
   .burger {
     display: flex;
   }
-  header input:checked ~ .nav {
+  .header input:checked ~ .nav {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 25vh;
   }
   .nav a {
-    flex-basis: 30px;
+    flex-basis: 50px;
   }
 }
