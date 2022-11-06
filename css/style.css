@@ -63,7 +63,7 @@ body {
   margin-right: 60px;
   transition-duration: 0.5s;
 }
-nav a:hover {
+.nav a:hover {
   color: #bf9bf9;
 }
 .burger {
@@ -106,4 +106,50 @@ nav a:hover {
 }
 .burger {
   display: none;
+}
+.container {
+  margin-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sidebar {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  margin: 10px 10px 20px 5px;
+  line-height: 2;
+  font-size: 1.2em;
+}
+.sidebar a {
+  text-decoration: none;
+}
+.content {
+  margin: 10px 5px 20px 25%;
+  padding: 5px;
+}
+.post {
+  border-bottom: .05rem solid #e5e5e5;
+}
+.post-data {
+  margin-bottom: 1.25em;
+  color: #727272;
+}
+.post h2 {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.5em;
+  padding: 5px;
+  margin-top: 10px;
+}
+.post .post-links {
+  margin-bottom: 5px;
+}
+.footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
 }
