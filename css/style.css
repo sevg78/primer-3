@@ -132,12 +132,22 @@ body {
 .post {
   border-bottom: .05rem solid #e5e5e5;
 }
+.post-img {
+  height: 200px;
+  width: 300px;
+  margin-right: 10px;
+  float: left;
+}
 .post-main {
   font-size: 1.3em;
+  min-height: 200px;
 }
 .post-data {
   margin-bottom: 1.25em;
   color: #727272;
+}
+.post-links {
+  float: right;
 }
 .post h2 {
   font-weight: 500;
