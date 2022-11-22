@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
   }
-  .container {
+.container {
     height: 60px;
     width: auto;
     border: solid 1px;
@@ -10,14 +10,11 @@
     padding: 10px;
     border-radius: 10px;
   }
-  .but {
+.btn {
     padding: 5px;
-    position: relative;
-    left: 100px;
-    top: 15px;
   }
   /*Modal*/
-  .modalbackground {
+.modalbackground {
     margin: 0; /* убираем отступы */
     padding: 0; /* убираем отступы */
     position: fixed; /* фиксируем положение */
@@ -30,44 +27,42 @@
     opacity:0; /* Делаем невидимым */
     pointer-events: none; /* элемент невидим для событий мыши */
 }
-    .modalbackground:target {
+.modalbackground:target {
     opacity: 1; /* делаем окно видимым */ 
     pointer-events: auto; /* элемент видим для событий мыши */
     transition: 0.7s opacity;
 }
     
-    /* ширина диалогового окна и его отступы от экрана */
-    .modalwindow {
+/* ширина диалогового окна и его отступы от экрана */
+.modalwindow {
     width: 100%;
     max-width: 300px;
     margin: 10% auto;
-    padding: 2%;
+    padding: 1%;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 2px 2px rgba(221, 221, 221, 1);
 }
-    /* настройка заголовка */
-    .modalwindow h3 {
-    padding: 0;
-    margin: 0;
-}
-    .modalwindow span {
-    border: solid 1px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+/* настройка заголовка */
+.modalwindow h3 {
+    margin-top: 20px;
     text-align: center;
-    position: ;
-    
+    padding: 0;
 }
-    /* оформление сообщение */
-    .modalwindow p {
+.close {
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    float: right;
+}
+/* оформление сообщение */
+.modalwindow p {
     padding: 0;
     margin: 4% 0 8% 0;
 }
-    /* вид кнопки ЗАКРЫТЬ */
-    .modalwindow a {
+/* вид кнопки ЗАКРЫТЬ */
+.modalwindow a {
     display: block;
     color: #fff;
     background: #369;
@@ -79,7 +74,7 @@
     text-decoration: none;
     
 }
-    /* вид кнопки ЗАКРЫТЬ при наведении на нее мыши */
-    .modalwindow a:hover {
+/* вид кнопки ЗАКРЫТЬ при наведении на нее мыши */
+.modalwindow a:hover {
     background: #47a;
 }
