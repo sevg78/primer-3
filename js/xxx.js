@@ -19,3 +19,5 @@ window.onclick = function (event) {
         modal.style.pointerEvents = 'none';
     }
 }
+
+

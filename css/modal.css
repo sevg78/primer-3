@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 .container {
     height: 60px;
     width: auto;
@@ -9,11 +9,25 @@
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
-  }
-.btn {
-    padding: 5px;
-  }
-  /*Modal*/
+}
+.but {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    background: #888888;
+    padding: 5px 15px;
+    font-size: 1.2em;
+}
+.but:hover {
+    background: #777777;
+    color: #252525;
+}
+.bun:focus {
+    box-shadow: 0 0 0 2px #cbd6ee;
+}
+/*Modal*/
 .modalbackground {
     margin: 0; /* убираем отступы */
     padding: 0; /* убираем отступы */
@@ -26,55 +40,38 @@
     z-index:100; /* выводим фон поверх всех слоев на странице браузера */
     opacity:0; /* Делаем невидимым */
     pointer-events: none; /* элемент невидим для событий мыши */
-}
-.modalbackground:target {
-    opacity: 1; /* делаем окно видимым */ 
-    pointer-events: auto; /* элемент видим для событий мыши */
-    transition: 0.7s opacity;
-}
-    
+}   
 /* ширина диалогового окна и его отступы от экрана */
 .modalwindow {
-    width: 100%;
+    position: relative;
     max-width: 300px;
     margin: 10% auto;
     padding: 1%;
-    background: #fff;
+    background: #c9c9c9;
     border-radius: 5px;
     box-shadow: 0 0 2px 2px rgba(221, 221, 221, 1);
 }
 /* настройка заголовка */
 .modalwindow h3 {
-    margin-top: 20px;
+    margin: 20px;
     text-align: center;
     padding: 0;
 }
 .close {
-    width: 30px;
-    height: 30px;
-    font-size: 2em;
-    font-weight: bold;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border: 0;
+    border-radius: 50%;
+    background: #888888;
+    padding: 5px 10px;
+    font-size: 16px;
     float: right;
 }
-/* оформление сообщение */
-.modalwindow p {
-    padding: 0;
-    margin: 4% 0 8% 0;
+.close:hover {
+    background: #777777;
+    font-weight: bold;
 }
-/* вид кнопки ЗАКРЫТЬ */
-.modalwindow a {
-    display: block;
-    color: #fff;
-    background: #369;
-    padding: 2%;
-    margin: 0 auto;
-    width: 50%;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    
-}
-/* вид кнопки ЗАКРЫТЬ при наведении на нее мыши */
-.modalwindow a:hover {
-    background: #47a;
+.close:focus {
+    box-shadow: 0 0 0 1px blue;
 }

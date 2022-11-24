@@ -1,83 +1,62 @@
 <!DOCTYPE html>
 <html lang=ru>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/media.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700|Radley" rel="stylesheet">
-    <title>Primer</title>
-  </head>
-  <body>
-    <header class="header">
-      <input type="checkbox" name="" value="">
-      <div class="burger">
-        <span class="line1 line"></span>
-        <span class="line2 line"></span>
-        <span class="line3 line"></span>
-      </div>
-      <a class="logo" href="#">LOGO</a>
-      <a class="user-ava" href="#"><img src="img/xxx.png" alt="user-ava"></a>
-      <a class="user-nav-ava" href="#">Выход</a> 
-      <!--<a class="user-nav" href="#">Вход</a>
-      <a class="user-nav" href="#">Регистрация</a> -->
-      <nav class="nav">
-        <a href="#">Главная</a>
-        <a href="#">Блог</a>
-        <a href="#">О сайте</a>
-      </nav>
-    </header>
-    <div class="container">
-      <aside class="sidebar">
-        <p><a href="#">Все байки</a></p>
-        <p><a href="#">Байки по автору</a></p>
-        <p><a href="#">Байки по теме</a></p>
-        <p><a href="#">Популярные байки</a></p>
-        <p><a href="#">Последние байки</a></p>
-      </aside>
-      <main class="content">
-        <article class="post">
-          <h2>Nazvanie posta!</h2>
-          <p class="post-data">
-          1 января 2022 года <a href="#">Evgen</a>
-          </p>
-          <img class="post-img" src="https://dummyimage.com/300x200/465249/ffffff.jpg" alt="test">
-          <p class="post-main">Это дополнительный контент-заполнитель абзаца. Он был написан,
-            чтобы заполнить доступное пространство и показать, как более длинный
-            фрагмент текста влияет на окружающий контент. Мы будем повторять
-            это часто, чтобы демонстрация продолжалась, так что ищите точно такую
-            же строку текста.Это дополнительный контент-заполнитель абзаца. Он был написан,
-            чтобы заполнить доступное пространство и показать, как более длинный
-            фрагмент текста влияет на окружающий контент. Мы будем повторять
-            это часто, чтобы демонстрация продолжалась, так что ищите точно такую
-            же строку текста.</p>
-          <br>
-          <p class="post-icon"><a href="#"><img src="img/yes.png" alt="vote-plus"></a><span>10</span></p>
-          <p class="post-icon"><a href="#"><img src="img/comment.png" alt="comment"></a><span>20</span></p>
-          <p class="post-icon"><a href="#"><img src="img/no.png" alt="vote-minus"></a><span>30</span></p>
-          <p class="post-links"><a href="#">Читать далее>>></a></p>
-        </article>
-        <article class="post">
-          <h2>Nazvanie vtorogo posta!</h2>
-          <p class="post-data">
-          1 января 2022 года <a href="#">Evgen</a>
-          </p>
-          <img class="post-img" src="https://dummyimage.com/300x200/465249/ffffff.jpg" alt="test">
-          <p class="post-main">Это дополнительный контент-заполнитель абзаца. Он был написан,
-            чтобы заполнить доступное пространство и показать, как более длинный
-            фрагмент текста влияет на окружающий контент. Мы будем повторять
-            это часто, чтобы демонстрация продолжалась, так что ищите точно такую
-            же строку текста.</p>
-            <br>
-            <p class="post-icon"><a href="#"><img src="img/yes.png" alt="vote-plus"></a><span>10</span></p>
-            <p class="post-icon"><a href="#"><img src="img/comment.png" alt="comment"></a><span>20</span></p>
-            <p class="post-icon"><a href="#"><img src="img/no.png" alt="vote-minus"></a><span>30</span></p>
-            <p class="post-links"><a href="#">Читать далее>>></a></p>
-        </article>
-      </main>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Главная страница</title>
+    </head>
+<body>
+        <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-4">
+            
+            <li class="nav-item">
+            <a class="nav-link" data-value="about" href="#">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " data-value="blog" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " data-value="team" href="#">
+            Team</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " data-value="contact" href="#">Contact</a>
+            </li>
+        </ul>
+        
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="header ">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="description ">
+            <h1>
+                Hello ,Welcome To My official Website
+                <p>
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn btn-outline-secondary btn-lg">See more</button>
+            </h1>
+        </div>
     </div>
-    <footer class="footer">
-      <p>&copy; by Evgen</p>
-    </footer>
-  </body>
+
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
 </html>
